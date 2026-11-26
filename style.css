@@ -378,3 +378,81 @@ h2 {
     margin: 20px 0 40px;
   }
 }
+
+/* --------------------
+    Works ホバー演出
+-------------------- */
+
+.works-item {
+  position: relative;
+}
+
+.works-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--theme-color);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.works-item::before {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 0.3s ease;
+}
+
+.works-item:hover::after,
+.works-item:focus-visible::after {
+  opacity: 0.5;
+}
+
+.works-item:hover::before,
+.works-item:focus-visible::before {
+  opacity: 1;
+}
+
+/* 作品名 */
+
+.works-item:has(img[src="modora.png"])::before {
+  content: "もどら";
+}
+
+.works-item:has(img[src="supermo.png"])::before {
+  content: "スーパーアルティメット も。";
+}
+
+.works-item:has(img[src="nyakunyaku.png"])::before {
+  content: "にゃくにゃく殿";
+}
+
+.works-item:has(img[src="broom.png"])::before {
+  content: "魔法のほうき";
+}
+
+/* スマホ対応 */
+
+@media screen and (max-width: 600px) {
+  .works-item::before {
+    font-size: 16px;
+  }
+}
+
+/* --------------------
+    リストの装飾削除
+-------------------- */
+
+li::before,
+li ul li::before {
+  content: none;
+}
