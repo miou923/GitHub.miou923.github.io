@@ -10,44 +10,74 @@
   </head>
 
   <body>
-    <h1>甘夢ミオ Portfolio</h1>
+
+    <!-- ヘッダースライドショー -->
+
+    <header class="hero">
+
+      <div class="hero-slide active"></div>
+      <div class="hero-slide"></div>
+      <div class="hero-slide"></div>
+
+      <div class="hero-overlay"></div>
+
+      <h1>甘夢ミオ Portfolio</h1>
+
+      <button class="slide-arrow prev" aria-label="前の画像">❮</button>
+      <button class="slide-arrow next" aria-label="次の画像">❯</button>
+
+      <div class="slide-dots">
+        <button class="dot active" aria-label="画像1"></button>
+        <button class="dot" aria-label="画像2"></button>
+        <button class="dot" aria-label="画像3"></button>
+      </div>
+
+    </header>
 
     <main>
+
+      <!-- About -->
+
       <h2>About</h2>
 
-<div class="about-container">
+      <div class="about-container">
 
-  <div class="about-logo">
-    <img src="4C.png" alt="甘夢ミオのロゴ">
-  </div>
+        <div class="about-logo">
+          <img src="4C.png" alt="甘夢ミオのロゴ">
+        </div>
 
-  <div class="about-text">
-    <p>
-      メタバースを中心に活動するクリエイターです。<br>
-      アバターなど3Dオブジェクトのモデリング、Javascriptを用いたギミック開発まで、幅広く取り組んでいます。<br>
-      自分のアイデアをカタチにし、たくさんの人を楽しませるクリエイターを目指しています。
-    </p>
-  </div>
+        <div class="about-text">
+          <p>
+            メタバースを中心に活動するクリエイターです。<br>
+            アバターなど3Dオブジェクトのモデリング、Javascriptを用いたギミック開発まで、幅広く取り組んでいます。<br>
+            自分のアイデアをカタチにし、たくさんの人を楽しませるクリエイターを目指しています。
+          </p>
+        </div>
 
-</div>
+      </div>
+
+      <!-- Profile -->
 
       <h2>Profile</h2>
 
-<dl class="profile-list">
-  <dt>活動名</dt>
-  <dd>甘夢ミオ</dd>
+      <dl class="profile-list">
+        <dt>活動名</dt>
+        <dd>甘夢ミオ</dd>
 
-  <dt>所在地</dt>
-  <dd>熊本県</dd>
+        <dt>所在地</dt>
+        <dd>熊本県</dd>
 
-  <dt>所属</dt>
-  <dd>ZEN大学</dd>
+        <dt>所属</dt>
+        <dd>ZEN大学</dd>
 
-  <dt>得意領域</dt>
-  <dd>3Dモデリング、メタバースコンテンツ制作</dd>
-</dl>
+        <dt>得意領域</dt>
+        <dd>3Dモデリング、メタバースコンテンツ制作</dd>
+      </dl>
+
+      <!-- Skills -->
 
       <h2>Skills</h2>
+
       <table>
         <tr>
           <th>OS</th>
@@ -79,73 +109,77 @@
         </tr>
       </table>
 
-      
-<h2>Works</h2>
-<p>これまでに制作した作品や活動実績です。</p>
+      <!-- Works -->
 
-<div class="works-grid">
+      <h2>Works</h2>
+      <p>これまでに制作した作品や活動実績です。</p>
 
-  <div class="works-category">
-    3Dアバター<br>制作
-  </div>
+      <div class="works-grid">
 
-  <a class="works-item" href="https://cluster.mu/store/avatars/fff1f009-be0c-4bc0-b341-852fc19286fa">
-    <img src="modora.png" alt="もどら">
-  </a>
+        <div class="works-category">
+          3Dアバター<br>制作
+        </div>
 
-  <a class="works-item" href="https://cluster.mu/store/avatars/5f1fcc07-bfc4-4549-b596-3d338bd3fbc4">
-    <img src="supermo.png" alt="スーパーアルティメット も。">
-  </a>
-
-  <a class="works-item" href="https://cluster.mu/store/avatars/1c4d4f13-fed2-431e-bf0d-f6f084abe99b">
-    <img src="nyakunyaku.png" alt="にゃくにゃく殿">
-  </a>
-
-</div>
-
-<div class="works-grid">
-
-  <div class="works-category">
-    クラフトアイテム<br>制作
-  </div>
-
-  <a class="works-item" href="https://cluster.mu/store/items/ab7b74d1-0ff8-4738-8387-66abaca5794f">
-    <img src="broom.png" alt="魔法のほうき">
-  </a>
-
-</div>
-
-<ul>
-  <li>
-    cluster用ギミック開発
-    <ul>
-      <li>個別音量ミキサー</li>
-      <li>スタンプラリーギミック</li>
-    </ul>
-  </li>
-
-  <li>
-    音楽・映像制作
-    <ul>
-      <li>
-        <a href="https://youtu.be/ha9ENRk92xA">
-          レクイエム 歌ってみた
+        <a class="works-item" href="https://cluster.mu/store/avatars/fff1f009-be0c-4bc0-b341-852fc19286fa">
+          <img src="modora.png" alt="もどら">
         </a>
-        （歌唱・MIX・MV制作）
-      </li>
-    </ul>
-  </li>
-</ul>
 
+        <a class="works-item" href="https://cluster.mu/store/avatars/5f1fcc07-bfc4-4549-b596-3d338bd3fbc4">
+          <img src="supermo.png" alt="スーパーアルティメット も。">
+        </a>
+
+        <a class="works-item" href="https://cluster.mu/store/avatars/1c4d4f13-fed2-431e-bf0d-f6f084abe99b">
+          <img src="nyakunyaku.png" alt="にゃくにゃく殿">
+        </a>
+
+      </div>
+
+      <div class="works-grid">
+
+        <div class="works-category">
+          クラフトアイテム<br>制作
+        </div>
+
+        <a class="works-item" href="https://cluster.mu/store/items/ab7b74d1-0ff8-4738-8387-66abaca5794f">
+          <img src="broom.png" alt="魔法のほうき">
+        </a>
+
+      </div>
+
+      <ul>
+        <li>
+          cluster用ギミック開発
+          <ul>
+            <li>個別音量ミキサー</li>
+            <li>スタンプラリーギミック</li>
+          </ul>
+        </li>
+
+        <li>
+          音楽・映像制作
+          <ul>
+            <li>
+              <a href="https://youtu.be/ha9ENRk92xA">
+                レクイエム 歌ってみた
+              </a>
+              （歌唱・MIX・MV制作）
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- Contact -->
 
       <h2>Contact</h2>
       <p>活動情報や制作物はこちらからご確認いただけます。</p>
+
       <ul>
         <li>
           <a href="https://x.com/__miou923" target="_blank" rel="noopener noreferrer">
             X（旧Twitter）
           </a>
         </li>
+
         <li>
           <a href="https://miou923.booth.pm/" target="_blank" rel="noopener noreferrer">
             BOOTH
@@ -153,7 +187,10 @@
         </li>
       </ul>
 
+      <!-- History -->
+
       <h2>History</h2>
+
       <table>
         <tr>
           <th>2026年4月</th>
@@ -164,10 +201,18 @@
           <td>S高等学校 卒業</td>
         </tr>
       </table>
+
     </main>
+
+    <!-- フッター -->
 
     <footer>
       <p>© 2026 ミオミオ共和国</p>
     </footer>
+
+    <!-- JavaScript読み込み -->
+
+    <script src="script.js"></script>
+
   </body>
 </html>
