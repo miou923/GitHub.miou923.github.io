@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap');
 /* --------------------
         全体
 -------------------- */
@@ -78,10 +78,6 @@ h2 {
 
 h3 {
   font-size: 24px;
-}
-
-h2::before, h3::before {
-  content: "♡ ";
 }
 
 p {
@@ -203,4 +199,10 @@ footer p {
   ul {
     padding-left: 25px;
   }
+}
+
+h2 {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
