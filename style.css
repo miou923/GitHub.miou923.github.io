@@ -1,4 +1,6 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap');
+
 /* --------------------
         全体
 -------------------- */
@@ -27,6 +29,12 @@ body {
   background-color: var(--background-color);
   font-family: sans-serif;
   line-height: 1.8;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 30px;
 }
 
 /* --------------------
@@ -65,23 +73,24 @@ h1::after {
         見出し
 -------------------- */
 
-h2, h3 {
+h2 {
   color: var(--theme-color);
   border-bottom: solid 1px #e7c4d7;
-  padding-bottom: 8px;
-  margin: 35px 30px 15px;
-}
-
-h2 {
+  padding-bottom: 10px;
+  margin: 45px 0 20px;
   font-size: 28px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
 }
 
-h3 {
-  font-size: 24px;
+h2::before {
+  content: none;
 }
 
 p {
-  margin: 15px 30px;
+  margin: 15px 0;
 }
 
 /* --------------------
@@ -105,7 +114,7 @@ a:hover {
 
 ul {
   list-style: none;
-  padding-left: 40px;
+  padding-left: 25px;
 }
 
 li {
@@ -130,9 +139,8 @@ table {
   border-spacing: 0;
   border-collapse: collapse;
   border: solid 1px #e7c4d7;
-  width: calc(100% - 60px);
-  max-width: 900px;
-  margin: 20px 30px;
+  width: 100%;
+  margin: 20px auto;
 }
 
 tr {
@@ -181,14 +189,12 @@ footer p {
     padding: 40px 15px;
   }
 
-  h2, h3, p {
-    margin-left: 15px;
-    margin-right: 15px;
+  main {
+    padding: 15px;
   }
 
-  table {
-    width: calc(100% - 30px);
-    margin: 15px;
+  h2 {
+    font-size: 24px;
   }
 
   th, td {
@@ -197,12 +203,6 @@ footer p {
   }
 
   ul {
-    padding-left: 25px;
+    padding-left: 15px;
   }
-}
-
-h2 {
-  font-family: 'Noto Sans', sans-serif;
-  font-weight: 700;
-  letter-spacing: 2px;
 }
