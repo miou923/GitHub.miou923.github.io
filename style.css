@@ -293,3 +293,33 @@ h2 {
     width: 100%;
   }
 }
+
+/* --------------------
+       Profile
+-------------------- */
+
+.profile-list {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 8px 20px;
+  margin: 25px 0;
+}
+
+.profile-list dt {
+  text-align: right;
+  font-weight: 600;
+}
+
+.profile-list dt::after {
+  content: "：";
+}
+
+.profile-list dd {
+  margin: 0;
+}
+
+/* Profileの文字サイズ調整 */
+
+.profile-list {
+  font-size: 18px;
+}
