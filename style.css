@@ -244,3 +244,52 @@ h2 {
     font-size: 14px;
   }
 }
+
+/* --------------------
+    About 2カラム
+-------------------- */
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 30px 0;
+}
+
+.about-logo {
+  width: 40%;
+  flex-shrink: 0;
+}
+
+.about-logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about-text {
+  flex: 1;
+  text-align: left;
+  line-height: 2;
+}
+
+.about-text p {
+  margin: 0;
+}
+
+/* スマホ対応 */
+
+@media screen and (max-width: 600px) {
+  .about-container {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .about-logo {
+    width: 70%;
+  }
+
+  .about-text {
+    width: 100%;
+  }
+}
