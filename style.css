@@ -587,3 +587,9 @@ li ul li::before {
     bottom: 15px;
   }
 }
+
+/* 2枚目の背景画像の表示位置調整 */
+
+.hero-slide:nth-child(2) {
+  background-position: center 25%;
+}
