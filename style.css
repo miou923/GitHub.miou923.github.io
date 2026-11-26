@@ -1,0 +1,206 @@
+
+/* --------------------
+        全体
+-------------------- */
+
+:root {
+  --theme-color: #93486d;
+  --dark-color: #21151f;
+  --pink-color: #e8a3c6;
+  --background-color: #fff5fa;
+  --text-color: #654354;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  font-family: sans-serif;
+  line-height: 1.8;
+}
+
+/* --------------------
+        タイトル
+-------------------- */
+
+h1 {
+  margin: 0;
+  padding: 60px 20px;
+  background-color: var(--dark-color);
+  color: #f8e3ef;
+  text-align: center;
+  font-size: 36px;
+  letter-spacing: 3px;
+  border-bottom: solid 3px var(--pink-color);
+}
+
+h1::before {
+  content: "M I O M I O  P O R T F O L I O";
+  display: block;
+  color: var(--pink-color);
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+h1::after {
+  content: "3D Creator / Metaverse Creator";
+  display: block;
+  color: var(--pink-color);
+  font-size: 15px;
+  font-weight: normal;
+  margin-top: 10px;
+}
+
+/* --------------------
+        見出し
+-------------------- */
+
+h2, h3 {
+  color: var(--theme-color);
+  border-bottom: solid 1px #e7c4d7;
+  padding-bottom: 8px;
+  margin: 35px 30px 15px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h2::before, h3::before {
+  content: "♡ ";
+}
+
+p {
+  margin: 15px 30px;
+}
+
+/* --------------------
+        リンク
+-------------------- */
+
+a {
+  color: var(--theme-color);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #d65b91;
+  text-decoration: underline;
+}
+
+/* --------------------
+        リスト
+-------------------- */
+
+ul {
+  list-style: none;
+  padding-left: 40px;
+}
+
+li {
+  margin: 8px 0;
+}
+
+li::before {
+  content: "♥";
+  color: var(--theme-color);
+  margin-right: 8px;
+}
+
+li ul li::before {
+  content: "♡";
+}
+
+/* --------------------
+          表
+-------------------- */
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  border: solid 1px #e7c4d7;
+  width: calc(100% - 60px);
+  max-width: 900px;
+  margin: 20px 30px;
+}
+
+tr {
+  background-color: #ffffff;
+}
+
+tr:nth-child(2n) {
+  background-color: #f8e3ef;
+}
+
+th {
+  background-color: var(--theme-color);
+  color: #ffffff;
+  width: 35%;
+}
+
+th, td {
+  border: solid 1px #e7c4d7;
+  padding: 12px;
+}
+
+/* --------------------
+       フッター
+-------------------- */
+
+footer {
+  margin-top: 60px;
+  padding: 25px;
+  text-align: center;
+  background-color: var(--dark-color);
+  color: var(--pink-color);
+  border-top: solid 3px var(--pink-color);
+}
+
+footer p {
+  margin: 0;
+}
+
+/* --------------------
+      スマホ対応
+-------------------- */
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 26px;
+    padding: 40px 15px;
+  }
+
+  h2, h3, p {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  table {
+    width: calc(100% - 30px);
+    margin: 15px;
+  }
+
+  th, td {
+    padding: 8px;
+    font-size: 13px;
+  }
+
+  ul {
+    padding-left: 25px;
+  }
+}
